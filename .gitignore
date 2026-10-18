@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.db
+*.sqlite3
+
+# Node
+web/node_modules/
+*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
+web/dist/
+web/.vite/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Camera frames (retained transiently, never committed)
+mocks/camera_frames/*
+!mocks/camera_frames/.gitkeep

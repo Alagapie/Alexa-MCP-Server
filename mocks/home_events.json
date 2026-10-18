@@ -1,0 +1,24 @@
+[
+  {
+    "ts": "2026-10-18T07:42:00Z",
+    "event_type": "object_sighting",
+    "room": "entry",
+    "details": "{\"objects\": [{\"label\": \"keys\", \"location\": \"entry table\", \"confidence\": 0.9}], \"summary\": \"Keys on the entry table.\"}"
+  },
+  {
+    "ts": "2026-10-18T07:15:00Z",
+    "event_type": "device_action",
+    "room": "kitchen",
+    "device_id": "coffee_plug",
+    "action": "on",
+    "details": "{\"on\": true}"
+  },
+  {
+    "ts": "2026-10-18T07:44:00Z",
+    "event_type": "device_action",
+    "room": "entry",
+    "device_id": "front_door",
+    "action": "lock",
+    "details": "{\"locked\": true}"
+  }
+]

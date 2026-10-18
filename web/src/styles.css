@@ -1,0 +1,70 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background-color: #f5f7fa;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.app { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+header h1 { margin: 0; font-size: 2rem; }
+header p { margin: 0.25rem 0 1.5rem; color: #4b5563; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1rem; align-items: start; }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 { margin-top: 0; }
+
+.messages {
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  max-height: 320px;
+  min-height: 220px;
+  background: #fafbfc;
+}
+
+.msg-user { margin-bottom: 0.6rem; color: #1d4ed8; }
+.msg-assistant { margin-bottom: 0.6rem; color: #0f766e; }
+.msg-assistant strong { color: #0f766e; }
+
+.input-row { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+.input-row input { flex: 1; }
+
+input, select, button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+button { background: #1a73e8; color: #fff; cursor: pointer; border: none; }
+button:hover:not(:disabled) { background: #1557b0; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
+.chip { background: #eef2ff; color: #3730a3; border: 1px solid #c7d2fe; font-size: 0.78rem; padding: 0.35rem 0.55rem; }
+.chip:hover:not(:disabled) { background: #e0e7ff; }
+
+.devices { display: grid; gap: 0.5rem; }
+.device { border: 1px solid #eef0f3; border-radius: 8px; padding: 0.5rem 0.65rem; font-size: 0.85rem; }
+
+small { color: #6b7280; }
+pre { background: #f1f5f9; padding: 0.5rem; border-radius: 6px; overflow-x: auto; font-size: 0.75rem; margin: 0.35rem 0; }
+
+.events, .toolcalls { list-style: none; margin: 0; padding: 0; }
+.events li { border-bottom: 1px solid #f1f5f9; padding: 0.35rem 0; font-size: 0.85rem; }
+.toolcalls li { border-bottom: 1px solid #f1f5f9; padding: 0.5rem 0; }
+.event-type { display: inline-block; background: #f0fdf4; color: #166534; border-radius: 4px; padding: 0 0.35rem; font-size: 0.72rem; }
+.err { color: #b91c1c; }
+code { background: #111827; color: #f9fafb; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.78rem; }

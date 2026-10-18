@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ring_evt_001",
+    "device": "front_door_camera",
+    "type": "motion",
+    "ts": "2026-10-18T07:12:00Z",
+    "summary": "Motion detected at the front door."
+  },
+  {
+    "id": "ring_evt_002",
+    "device": "front_door_camera",
+    "type": "person",
+    "ts": "2026-10-18T07:43:00Z",
+    "summary": "A person approached the front door and left a package."
+  },
+  {
+    "id": "ring_evt_003",
+    "device": "back_door_camera",
+    "type": "motion",
+    "ts": "2026-10-18T18:05:00Z",
+    "summary": "Motion detected at the back door."
+  }
+]
